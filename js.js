@@ -4,7 +4,8 @@ req.send();
 req.onload=function(){
     var data = JSON.parse(req.response)
    for(var i in data){
-       console.log(`flag : ${data[i].flag}`)
+       
+       console.log(`NAME : ${data[i].name}, REGION : ${data[i].region}, SUBREGION : ${data[i].subregion}, POPULATION : ${data[i].population}`)
    }
 }
 
